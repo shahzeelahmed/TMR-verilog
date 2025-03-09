@@ -1,0 +1,1 @@
+-wto "7a8e83f47fe24558a70c78115bfb86b1" --debug "typical" --relax --mt "2" --maxdelay -L "xil_defaultlib" -L "simprims_ver" -L "secureip" --snapshot "tb_spi_system_led_single_reset_time_impl" -transport_int_delays -pulse_r "0" -pulse_int_r "0" "xil_defaultlib.tb_spi_system_led_single_reset" "xil_defaultlib.glbl" -log "elaborate.log" 

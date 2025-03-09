@@ -1,0 +1,71 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Feb 19 23:43:44 2025
+| Host         : LAPTOP-FMPURMC8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file spi_system_control_sets_placed.rpt
+| Design       : spi_system
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    49 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            3 |
+| No           | No                    | Yes                    |              13 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              27 |            8 |
+| Yes          | No                    | Yes                    |               8 |            5 |
+| Yes          | Yes                   | No                     |              48 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | slave0_inst/display_index0          |                                     |                1 |              1 |
+|  clk_IBUF_BUFG | slave1_inst/display_index0          |                                     |                1 |              1 |
+|  clk_IBUF_BUFG | slave2_inst/display_index0          |                                     |                1 |              1 |
+|  clk_IBUF_BUFG | master_inst/E[0]                    | master_inst/bit_count_reg[3]_2[0]   |                1 |              4 |
+|  clk_IBUF_BUFG | master_inst/bit_count_reg[3][0]     | master_inst/bit_count_reg[3]_1[0]   |                1 |              4 |
+|  clk_IBUF_BUFG | master_inst/bit_count_reg[3]_0[0]   | master_inst/SR[0]                   |                1 |              4 |
+|  clk_IBUF_BUFG | slave0_inst/display_index0          | slave0_inst/display_index           |                1 |              4 |
+|  clk_IBUF_BUFG | slave1_inst/display_index0          | slave1_inst/display_index           |                1 |              4 |
+|  clk_IBUF_BUFG | slave2_inst/display_index0          | slave2_inst/display_index           |                1 |              4 |
+|  clk_IBUF_BUFG |                                     |                                     |                3 |              7 |
+|  clk_IBUF_BUFG | master_inst/shift_reg               | rst_IBUF                            |                5 |              8 |
+|  clk_IBUF_BUFG | master_inst/shift_reg_reg[7]_0      | master_inst/shift_reg_reg[0]_0      |                1 |              8 |
+|  clk_IBUF_BUFG | master_inst/shift_reg_reg[7]_1      | master_inst/shift_reg_reg[0]_1      |                2 |              8 |
+|  clk_IBUF_BUFG | slave0_inst/pattern_valid           |                                     |                2 |              8 |
+|  clk_IBUF_BUFG | slave0_inst/shift_reg[7]_i_2__0_n_0 | slave0_inst/shift_reg[7]_i_1__0_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG | slave1_inst/pattern_valid           |                                     |                1 |              8 |
+|  clk_IBUF_BUFG | slave2_inst/pattern_valid           |                                     |                2 |              8 |
+|  clk_IBUF_BUFG |                                     | rst_IBUF                            |                5 |             13 |
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
+
+

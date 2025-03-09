@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/impl/timing/tb_spi_system_led_single_reset_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_slave_led_0
+INFO: [VRFC 10-311] analyzing module spi_slave_led_1
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 21 12:04:35 2025
+# Process ID: 21004
+# Current directory: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13748 C:\Users\himan\OneDrive\Desktop\finaYRpro\trafficLight - Copy\trafficLight.xpr
+# Log file: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/vivado.log
+# Journal file: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+source tb_spi_system_led_single_reset.tcl
+launch_simulation
+source tb_spi_system_led_single_reset.tcl
+close_sim
+launch_simulation
+source tb_spi_system_led_single_reset.tcl
+current_sim simulation_1
+restart
+run 10 us
+current_sim simulation_3
+close_sim
+close_sim

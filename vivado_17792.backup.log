@@ -1,0 +1,2119 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 14 23:19:01 2025
+# Process ID: 17792
+# Current directory: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7524 C:\Users\himan\OneDrive\Desktop\finaYRpro\trafficLight - Copy\trafficLight.xpr
+# Log file: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/vivado.log
+# Journal file: C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 827.785 ; gain = 157.652
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 186. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 73. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 186. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 73. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 2. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led(BLINK_DELAY=20)
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 827.785 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+SUCCESS at time              1230000: Slave0, cycle 0: got 1
+SUCCESS at time              1440000: Slave0, cycle 1: got 0
+SUCCESS at time              1650000: Slave0, cycle 2: got 1
+SUCCESS at time              1860000: Slave0, cycle 3: got 0
+SUCCESS at time              2070000: Slave0, cycle 4: got 1
+SUCCESS at time              2280000: Slave0, cycle 5: got 0
+SUCCESS at time              2490000: Slave0, cycle 6: got 1
+SUCCESS at time              2700000: Slave0, cycle 7: got 0
+SUCCESS at time              2910000: Slave0, cycle 8: got 1
+SUCCESS at time              3120000: Slave0, cycle 9: got 0
+SUCCESS at time              3330000: Slave0, cycle 10: got 1
+SUCCESS at time              3540000: Slave0, cycle 11: got 0
+SUCCESS at time              3750000: Slave0, cycle 12: got 1
+SUCCESS at time              3960000: Slave0, cycle 13: got 0
+SUCCESS at time              4170000: Slave0, cycle 14: got 1
+SUCCESS at time              4380000: Slave0, cycle 15: got 0
+----- Testing Slave 1 -----
+SUCCESS at time              5610000: Slave1, cycle 0: got 0
+SUCCESS at time              5820000: Slave1, cycle 1: got 1
+SUCCESS at time              6030000: Slave1, cycle 2: got 0
+SUCCESS at time              6240000: Slave1, cycle 3: got 1
+SUCCESS at time              6450000: Slave1, cycle 4: got 0
+SUCCESS at time              6660000: Slave1, cycle 5: got 1
+SUCCESS at time              6870000: Slave1, cycle 6: got 0
+SUCCESS at time              7080000: Slave1, cycle 7: got 1
+SUCCESS at time              7290000: Slave1, cycle 8: got 0
+SUCCESS at time              7500000: Slave1, cycle 9: got 1
+SUCCESS at time              7710000: Slave1, cycle 10: got 0
+SUCCESS at time              7920000: Slave1, cycle 11: got 1
+SUCCESS at time              8130000: Slave1, cycle 12: got 0
+SUCCESS at time              8340000: Slave1, cycle 13: got 1
+SUCCESS at time              8550000: Slave1, cycle 14: got 0
+SUCCESS at time              8760000: Slave1, cycle 15: got 1
+----- Testing Slave 2 -----
+ERROR at time              9990000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time             10200000: Slave2, cycle 1: Expected 1, got 0
+ERROR at time             10410000: Slave2, cycle 2: Expected 1, got 0
+ERROR at time             10620000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time             10830000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time             11040000: Slave2, cycle 5: Expected 0, got 1
+ERROR at time             11250000: Slave2, cycle 6: Expected 0, got 1
+ERROR at time             11460000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time             11670000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time             11880000: Slave2, cycle 9: Expected 1, got 0
+ERROR at time             12090000: Slave2, cycle 10: Expected 1, got 0
+ERROR at time             12300000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time             12510000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time             12720000: Slave2, cycle 13: Expected 0, got 1
+ERROR at time             12930000: Slave2, cycle 14: Expected 0, got 1
+ERROR at time             13140000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 841.906 ; gain = 14.121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 196. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 196. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led(BLINK_DELAY=20)
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+SUCCESS at time              1230000: Slave0, cycle 0: got 1
+SUCCESS at time              1440000: Slave0, cycle 1: got 0
+SUCCESS at time              1650000: Slave0, cycle 2: got 1
+SUCCESS at time              1860000: Slave0, cycle 3: got 0
+SUCCESS at time              2070000: Slave0, cycle 4: got 1
+SUCCESS at time              2280000: Slave0, cycle 5: got 0
+SUCCESS at time              2490000: Slave0, cycle 6: got 1
+SUCCESS at time              2700000: Slave0, cycle 7: got 0
+SUCCESS at time              2910000: Slave0, cycle 8: got 1
+SUCCESS at time              3120000: Slave0, cycle 9: got 0
+SUCCESS at time              3330000: Slave0, cycle 10: got 1
+SUCCESS at time              3540000: Slave0, cycle 11: got 0
+SUCCESS at time              3750000: Slave0, cycle 12: got 1
+SUCCESS at time              3960000: Slave0, cycle 13: got 0
+SUCCESS at time              4170000: Slave0, cycle 14: got 1
+SUCCESS at time              4380000: Slave0, cycle 15: got 0
+----- Testing Slave 1 -----
+SUCCESS at time              5610000: Slave1, cycle 0: got 0
+SUCCESS at time              5820000: Slave1, cycle 1: got 1
+SUCCESS at time              6030000: Slave1, cycle 2: got 0
+SUCCESS at time              6240000: Slave1, cycle 3: got 1
+SUCCESS at time              6450000: Slave1, cycle 4: got 0
+SUCCESS at time              6660000: Slave1, cycle 5: got 1
+SUCCESS at time              6870000: Slave1, cycle 6: got 0
+SUCCESS at time              7080000: Slave1, cycle 7: got 1
+SUCCESS at time              7290000: Slave1, cycle 8: got 0
+SUCCESS at time              7500000: Slave1, cycle 9: got 1
+SUCCESS at time              7710000: Slave1, cycle 10: got 0
+SUCCESS at time              7920000: Slave1, cycle 11: got 1
+SUCCESS at time              8130000: Slave1, cycle 12: got 0
+SUCCESS at time              8340000: Slave1, cycle 13: got 1
+SUCCESS at time              8550000: Slave1, cycle 14: got 0
+SUCCESS at time              8760000: Slave1, cycle 15: got 1
+----- Testing Slave 2 -----
+ERROR at time              9990000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time             10200000: Slave2, cycle 1: Expected 1, got 0
+ERROR at time             10410000: Slave2, cycle 2: Expected 1, got 0
+ERROR at time             10620000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time             10830000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time             11040000: Slave2, cycle 5: Expected 0, got 1
+ERROR at time             11250000: Slave2, cycle 6: Expected 0, got 1
+ERROR at time             11460000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time             11670000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time             11880000: Slave2, cycle 9: Expected 1, got 0
+ERROR at time             12090000: Slave2, cycle 10: Expected 1, got 0
+ERROR at time             12300000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time             12510000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time             12720000: Slave2, cycle 13: Expected 0, got 1
+ERROR at time             12930000: Slave2, cycle 14: Expected 0, got 1
+ERROR at time             13140000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 867.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led(BLINK_DELAY=20)
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+SUCCESS at time              1230000: Slave0, cycle 0: got 1
+SUCCESS at time              1440000: Slave0, cycle 1: got 0
+SUCCESS at time              1650000: Slave0, cycle 2: got 1
+SUCCESS at time              1860000: Slave0, cycle 3: got 0
+SUCCESS at time              2070000: Slave0, cycle 4: got 1
+SUCCESS at time              2280000: Slave0, cycle 5: got 0
+SUCCESS at time              2490000: Slave0, cycle 6: got 1
+SUCCESS at time              2700000: Slave0, cycle 7: got 0
+SUCCESS at time              2910000: Slave0, cycle 8: got 1
+SUCCESS at time              3120000: Slave0, cycle 9: got 0
+SUCCESS at time              3330000: Slave0, cycle 10: got 1
+SUCCESS at time              3540000: Slave0, cycle 11: got 0
+SUCCESS at time              3750000: Slave0, cycle 12: got 1
+SUCCESS at time              3960000: Slave0, cycle 13: got 0
+SUCCESS at time              4170000: Slave0, cycle 14: got 1
+SUCCESS at time              4380000: Slave0, cycle 15: got 0
+----- Testing Slave 1 -----
+SUCCESS at time              5610000: Slave1, cycle 0: got 0
+SUCCESS at time              5820000: Slave1, cycle 1: got 1
+SUCCESS at time              6030000: Slave1, cycle 2: got 0
+SUCCESS at time              6240000: Slave1, cycle 3: got 1
+SUCCESS at time              6450000: Slave1, cycle 4: got 0
+SUCCESS at time              6660000: Slave1, cycle 5: got 1
+SUCCESS at time              6870000: Slave1, cycle 6: got 0
+SUCCESS at time              7080000: Slave1, cycle 7: got 1
+SUCCESS at time              7290000: Slave1, cycle 8: got 0
+SUCCESS at time              7500000: Slave1, cycle 9: got 1
+SUCCESS at time              7710000: Slave1, cycle 10: got 0
+SUCCESS at time              7920000: Slave1, cycle 11: got 1
+SUCCESS at time              8130000: Slave1, cycle 12: got 0
+SUCCESS at time              8340000: Slave1, cycle 13: got 1
+SUCCESS at time              8550000: Slave1, cycle 14: got 0
+SUCCESS at time              8760000: Slave1, cycle 15: got 1
+----- Testing Slave 2 -----
+ERROR at time              9990000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time             10200000: Slave2, cycle 1: Expected 1, got 0
+ERROR at time             10410000: Slave2, cycle 2: Expected 1, got 0
+ERROR at time             10620000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time             10830000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time             11040000: Slave2, cycle 5: Expected 0, got 1
+ERROR at time             11250000: Slave2, cycle 6: Expected 0, got 1
+ERROR at time             11460000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time             11670000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time             11880000: Slave2, cycle 9: Expected 1, got 0
+ERROR at time             12090000: Slave2, cycle 10: Expected 1, got 0
+ERROR at time             12300000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time             12510000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time             12720000: Slave2, cycle 13: Expected 0, got 1
+ERROR at time             12930000: Slave2, cycle 14: Expected 0, got 1
+ERROR at time             13140000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 867.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 867.574 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led(BLINK_DELAY=20) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led(BLINK_DELAY=20)
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+SUCCESS at time              1230000: Slave0, cycle 0: got 1
+SUCCESS at time              1440000: Slave0, cycle 1: got 0
+SUCCESS at time              1650000: Slave0, cycle 2: got 1
+SUCCESS at time              1860000: Slave0, cycle 3: got 0
+SUCCESS at time              2070000: Slave0, cycle 4: got 1
+SUCCESS at time              2280000: Slave0, cycle 5: got 0
+SUCCESS at time              2490000: Slave0, cycle 6: got 1
+SUCCESS at time              2700000: Slave0, cycle 7: got 0
+SUCCESS at time              2910000: Slave0, cycle 8: got 1
+SUCCESS at time              3120000: Slave0, cycle 9: got 0
+SUCCESS at time              3330000: Slave0, cycle 10: got 1
+SUCCESS at time              3540000: Slave0, cycle 11: got 0
+SUCCESS at time              3750000: Slave0, cycle 12: got 1
+SUCCESS at time              3960000: Slave0, cycle 13: got 0
+SUCCESS at time              4170000: Slave0, cycle 14: got 1
+SUCCESS at time              4380000: Slave0, cycle 15: got 0
+----- Testing Slave 1 -----
+SUCCESS at time              5610000: Slave1, cycle 0: got 0
+SUCCESS at time              5820000: Slave1, cycle 1: got 1
+SUCCESS at time              6030000: Slave1, cycle 2: got 0
+SUCCESS at time              6240000: Slave1, cycle 3: got 1
+SUCCESS at time              6450000: Slave1, cycle 4: got 0
+SUCCESS at time              6660000: Slave1, cycle 5: got 1
+SUCCESS at time              6870000: Slave1, cycle 6: got 0
+SUCCESS at time              7080000: Slave1, cycle 7: got 1
+SUCCESS at time              7290000: Slave1, cycle 8: got 0
+SUCCESS at time              7500000: Slave1, cycle 9: got 1
+SUCCESS at time              7710000: Slave1, cycle 10: got 0
+SUCCESS at time              7920000: Slave1, cycle 11: got 1
+SUCCESS at time              8130000: Slave1, cycle 12: got 0
+SUCCESS at time              8340000: Slave1, cycle 13: got 1
+SUCCESS at time              8550000: Slave1, cycle 14: got 0
+SUCCESS at time              8760000: Slave1, cycle 15: got 1
+----- Testing Slave 2 -----
+ERROR at time              9990000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time             10200000: Slave2, cycle 1: Expected 1, got 0
+ERROR at time             10410000: Slave2, cycle 2: Expected 1, got 0
+ERROR at time             10620000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time             10830000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time             11040000: Slave2, cycle 5: Expected 0, got 1
+ERROR at time             11250000: Slave2, cycle 6: Expected 0, got 1
+ERROR at time             11460000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time             11670000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time             11880000: Slave2, cycle 9: Expected 1, got 0
+ERROR at time             12090000: Slave2, cycle 10: Expected 1, got 0
+ERROR at time             12300000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time             12510000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time             12720000: Slave2, cycle 13: Expected 0, got 1
+ERROR at time             12930000: Slave2, cycle 14: Expected 0, got 1
+ERROR at time             13140000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 867.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+ERROR at time              1230000: Slave0, cycle 0: Expected 1, got 0
+ERROR at time              1440000: Slave0, cycle 1: Expected 0, got 1
+ERROR at time              1650000: Slave0, cycle 2: Expected 1, got 0
+ERROR at time              1860000: Slave0, cycle 3: Expected 0, got 1
+ERROR at time              2070000: Slave0, cycle 4: Expected 1, got 0
+ERROR at time              2280000: Slave0, cycle 5: Expected 0, got 1
+ERROR at time              2490000: Slave0, cycle 6: Expected 1, got 0
+ERROR at time              2700000: Slave0, cycle 7: Expected 0, got 1
+ERROR at time              2910000: Slave0, cycle 8: Expected 1, got 0
+ERROR at time              3120000: Slave0, cycle 9: Expected 0, got 1
+ERROR at time              3330000: Slave0, cycle 10: Expected 1, got 0
+ERROR at time              3540000: Slave0, cycle 11: Expected 0, got 1
+ERROR at time              3750000: Slave0, cycle 12: Expected 1, got 0
+ERROR at time              3960000: Slave0, cycle 13: Expected 0, got 1
+ERROR at time              4170000: Slave0, cycle 14: Expected 1, got 0
+ERROR at time              4380000: Slave0, cycle 15: Expected 0, got 1
+----- Testing Slave 1 -----
+ERROR at time              5610000: Slave1, cycle 0: Expected 0, got 1
+ERROR at time              5820000: Slave1, cycle 1: Expected 1, got 0
+ERROR at time              6030000: Slave1, cycle 2: Expected 0, got 1
+ERROR at time              6240000: Slave1, cycle 3: Expected 1, got 0
+ERROR at time              6450000: Slave1, cycle 4: Expected 0, got 1
+ERROR at time              6660000: Slave1, cycle 5: Expected 1, got 0
+ERROR at time              6870000: Slave1, cycle 6: Expected 0, got 1
+ERROR at time              7080000: Slave1, cycle 7: Expected 1, got 0
+ERROR at time              7290000: Slave1, cycle 8: Expected 0, got 1
+ERROR at time              7500000: Slave1, cycle 9: Expected 1, got 0
+ERROR at time              7710000: Slave1, cycle 10: Expected 0, got 1
+ERROR at time              7920000: Slave1, cycle 11: Expected 1, got 0
+ERROR at time              8130000: Slave1, cycle 12: Expected 0, got 1
+ERROR at time              8340000: Slave1, cycle 13: Expected 1, got 0
+ERROR at time              8550000: Slave1, cycle 14: Expected 0, got 1
+ERROR at time              8760000: Slave1, cycle 15: Expected 1, got 0
+----- Testing Slave 2 -----
+ERROR at time              9990000: Slave2, cycle 0: Expected 1, got 0
+SUCCESS at time             10200000: Slave2, cycle 1: got 1
+ERROR at time             10410000: Slave2, cycle 2: Expected 1, got 0
+ERROR at time             10620000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time             10830000: Slave2, cycle 4: Expected 0, got 1
+SUCCESS at time             11040000: Slave2, cycle 5: got 0
+ERROR at time             11250000: Slave2, cycle 6: Expected 0, got 1
+ERROR at time             11460000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time             11670000: Slave2, cycle 8: Expected 1, got 0
+SUCCESS at time             11880000: Slave2, cycle 9: got 1
+ERROR at time             12090000: Slave2, cycle 10: Expected 1, got 0
+ERROR at time             12300000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time             12510000: Slave2, cycle 12: Expected 0, got 1
+SUCCESS at time             12720000: Slave2, cycle 13: got 0
+ERROR at time             12930000: Slave2, cycle 14: Expected 0, got 1
+ERROR at time             13140000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 881.070 ; gain = 11.426
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+ERROR at time               130000: Slave0, cycle 0: Expected 1, got 0
+SUCCESS at time               140000: Slave0, cycle 1: got 0
+ERROR at time               150000: Slave0, cycle 2: Expected 1, got 0
+SUCCESS at time               160000: Slave0, cycle 3: got 0
+ERROR at time               170000: Slave0, cycle 4: Expected 1, got 0
+SUCCESS at time               180000: Slave0, cycle 5: got 0
+ERROR at time               190000: Slave0, cycle 6: Expected 1, got 0
+SUCCESS at time               200000: Slave0, cycle 7: got 0
+----- Testing Slave 1 -----
+ERROR at time              1430000: Slave1, cycle 0: Expected 0, got 1
+ERROR at time              1640000: Slave1, cycle 1: Expected 1, got 0
+ERROR at time              1850000: Slave1, cycle 2: Expected 0, got 1
+ERROR at time              2060000: Slave1, cycle 3: Expected 1, got 0
+ERROR at time              2270000: Slave1, cycle 4: Expected 0, got 1
+ERROR at time              2480000: Slave1, cycle 5: Expected 1, got 0
+ERROR at time              2690000: Slave1, cycle 6: Expected 0, got 1
+ERROR at time              2900000: Slave1, cycle 7: Expected 1, got 0
+ERROR at time              3110000: Slave1, cycle 8: Expected 0, got 1
+ERROR at time              3320000: Slave1, cycle 9: Expected 1, got 0
+ERROR at time              3530000: Slave1, cycle 10: Expected 0, got 1
+ERROR at time              3740000: Slave1, cycle 11: Expected 1, got 0
+ERROR at time              3950000: Slave1, cycle 12: Expected 0, got 1
+ERROR at time              4160000: Slave1, cycle 13: Expected 1, got 0
+ERROR at time              4370000: Slave1, cycle 14: Expected 0, got 1
+ERROR at time              4580000: Slave1, cycle 15: Expected 1, got 0
+----- Testing Slave 2 -----
+ERROR at time              5810000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time              6020000: Slave2, cycle 1: Expected 1, got 0
+SUCCESS at time              6230000: Slave2, cycle 2: got 1
+ERROR at time              6440000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time              6650000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time              6860000: Slave2, cycle 5: Expected 0, got 1
+SUCCESS at time              7070000: Slave2, cycle 6: got 0
+ERROR at time              7280000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time              7490000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time              7700000: Slave2, cycle 9: Expected 1, got 0
+SUCCESS at time              7910000: Slave2, cycle 10: got 1
+ERROR at time              8120000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time              8330000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time              8540000: Slave2, cycle 13: Expected 0, got 1
+SUCCESS at time              8750000: Slave2, cycle 14: got 0
+ERROR at time              8960000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 881.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+ERROR at time               130000: Slave0, cycle 0: Expected 1, got 0
+SUCCESS at time               140000: Slave0, cycle 1: got 0
+ERROR at time               150000: Slave0, cycle 2: Expected 1, got 0
+SUCCESS at time               160000: Slave0, cycle 3: got 0
+ERROR at time               170000: Slave0, cycle 4: Expected 1, got 0
+SUCCESS at time               180000: Slave0, cycle 5: got 0
+ERROR at time               190000: Slave0, cycle 6: Expected 1, got 0
+SUCCESS at time               200000: Slave0, cycle 7: got 0
+ERROR at time               210000: Slave0, cycle 8: Expected 1, got 0
+ERROR at time               220000: Slave0, cycle 9: Expected 0, got 1
+ERROR at time               230000: Slave0, cycle 10: Expected 1, got 0
+ERROR at time               240000: Slave0, cycle 11: Expected 0, got 1
+ERROR at time               250000: Slave0, cycle 12: Expected 1, got 0
+ERROR at time               260000: Slave0, cycle 13: Expected 0, got 1
+ERROR at time               270000: Slave0, cycle 14: Expected 1, got 0
+ERROR at time               280000: Slave0, cycle 15: Expected 0, got 1
+----- Testing Slave 1 -----
+ERROR at time              1510000: Slave1, cycle 0: Expected 0, got 1
+ERROR at time              1720000: Slave1, cycle 1: Expected 1, got 0
+ERROR at time              1930000: Slave1, cycle 2: Expected 0, got 1
+ERROR at time              2140000: Slave1, cycle 3: Expected 1, got 0
+ERROR at time              2350000: Slave1, cycle 4: Expected 0, got 1
+ERROR at time              2560000: Slave1, cycle 5: Expected 1, got 0
+ERROR at time              2770000: Slave1, cycle 6: Expected 0, got 1
+ERROR at time              2980000: Slave1, cycle 7: Expected 1, got 0
+ERROR at time              3190000: Slave1, cycle 8: Expected 0, got 1
+ERROR at time              3400000: Slave1, cycle 9: Expected 1, got 0
+ERROR at time              3610000: Slave1, cycle 10: Expected 0, got 1
+ERROR at time              3820000: Slave1, cycle 11: Expected 1, got 0
+ERROR at time              4030000: Slave1, cycle 12: Expected 0, got 1
+ERROR at time              4240000: Slave1, cycle 13: Expected 1, got 0
+ERROR at time              4450000: Slave1, cycle 14: Expected 0, got 1
+ERROR at time              4660000: Slave1, cycle 15: Expected 1, got 0
+----- Testing Slave 2 -----
+ERROR at time              5890000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time              6100000: Slave2, cycle 1: Expected 1, got 0
+SUCCESS at time              6310000: Slave2, cycle 2: got 1
+ERROR at time              6520000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time              6730000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time              6940000: Slave2, cycle 5: Expected 0, got 1
+SUCCESS at time              7150000: Slave2, cycle 6: got 0
+ERROR at time              7360000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time              7570000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time              7780000: Slave2, cycle 9: Expected 1, got 0
+SUCCESS at time              7990000: Slave2, cycle 10: got 1
+ERROR at time              8200000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time              8410000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time              8620000: Slave2, cycle 13: Expected 0, got 1
+SUCCESS at time              8830000: Slave2, cycle 14: got 0
+ERROR at time              9040000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 881.070 ; gain = 0.000
+add_bp {C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v} 126
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 202. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 83. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 10. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Testing Slave 0 -----
+----- Testing Slave 1 -----
+ERROR at time              1350000: Slave1, cycle 0: Expected 0, got 1
+ERROR at time              1560000: Slave1, cycle 1: Expected 1, got 0
+ERROR at time              1770000: Slave1, cycle 2: Expected 0, got 1
+ERROR at time              1980000: Slave1, cycle 3: Expected 1, got 0
+ERROR at time              2190000: Slave1, cycle 4: Expected 0, got 1
+ERROR at time              2400000: Slave1, cycle 5: Expected 1, got 0
+ERROR at time              2610000: Slave1, cycle 6: Expected 0, got 1
+ERROR at time              2820000: Slave1, cycle 7: Expected 1, got 0
+ERROR at time              3030000: Slave1, cycle 8: Expected 0, got 1
+ERROR at time              3240000: Slave1, cycle 9: Expected 1, got 0
+ERROR at time              3450000: Slave1, cycle 10: Expected 0, got 1
+ERROR at time              3660000: Slave1, cycle 11: Expected 1, got 0
+ERROR at time              3870000: Slave1, cycle 12: Expected 0, got 1
+ERROR at time              4080000: Slave1, cycle 13: Expected 1, got 0
+ERROR at time              4290000: Slave1, cycle 14: Expected 0, got 1
+ERROR at time              4500000: Slave1, cycle 15: Expected 1, got 0
+----- Testing Slave 2 -----
+ERROR at time              5730000: Slave2, cycle 0: Expected 1, got 0
+ERROR at time              5940000: Slave2, cycle 1: Expected 1, got 0
+SUCCESS at time              6150000: Slave2, cycle 2: got 1
+ERROR at time              6360000: Slave2, cycle 3: Expected 1, got 0
+ERROR at time              6570000: Slave2, cycle 4: Expected 0, got 1
+ERROR at time              6780000: Slave2, cycle 5: Expected 0, got 1
+SUCCESS at time              6990000: Slave2, cycle 6: got 0
+ERROR at time              7200000: Slave2, cycle 7: Expected 0, got 1
+ERROR at time              7410000: Slave2, cycle 8: Expected 1, got 0
+ERROR at time              7620000: Slave2, cycle 9: Expected 1, got 0
+SUCCESS at time              7830000: Slave2, cycle 10: got 1
+ERROR at time              8040000: Slave2, cycle 11: Expected 1, got 0
+ERROR at time              8250000: Slave2, cycle 12: Expected 0, got 1
+ERROR at time              8460000: Slave2, cycle 13: Expected 0, got 1
+SUCCESS at time              8670000: Slave2, cycle 14: got 0
+ERROR at time              8880000: Slave2, cycle 15: Expected 0, got 1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 881.590 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 194. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 65. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 194. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 65. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Test 1: Slave 0 (Data = 10101010) -----
+Test 1 SUCCESS at time               225000, cycle 0: got 1
+Test 1 SUCCESS at time               235000, cycle 1: got 0
+Test 1 SUCCESS at time               245000, cycle 2: got 1
+Test 1 SUCCESS at time               255000, cycle 3: got 0
+Test 1 SUCCESS at time               265000, cycle 4: got 1
+Test 1 SUCCESS at time               275000, cycle 5: got 0
+Test 1 SUCCESS at time               285000, cycle 6: got 1
+Test 1 SUCCESS at time               295000, cycle 7: got 0
+----- Test 2: Slave 1 (Data = 01010101) -----
+Test 2 ERROR at time               515000, cycle 0: Expected 0, got x
+Test 2 ERROR at time               525000, cycle 1: Expected 1, got x
+Test 2 ERROR at time               535000, cycle 2: Expected 0, got x
+Test 2 ERROR at time               545000, cycle 3: Expected 1, got x
+Test 2 ERROR at time               555000, cycle 4: Expected 0, got x
+Test 2 ERROR at time               565000, cycle 5: Expected 1, got x
+Test 2 ERROR at time               575000, cycle 6: Expected 0, got x
+Test 2 ERROR at time               585000, cycle 7: Expected 1, got x
+----- Test 3: Slave 2 (Data = 11110000) -----
+Test 3 ERROR at time               805000, cycle 0: Expected 1, got x
+Test 3 ERROR at time               815000, cycle 1: Expected 1, got x
+Test 3 ERROR at time               825000, cycle 2: Expected 1, got x
+Test 3 ERROR at time               835000, cycle 3: Expected 1, got x
+Test 3 ERROR at time               845000, cycle 4: Expected 0, got x
+Test 3 ERROR at time               855000, cycle 5: Expected 0, got x
+Test 3 ERROR at time               865000, cycle 6: Expected 0, got x
+Test 3 ERROR at time               875000, cycle 7: Expected 0, got x
+----- All tests completed -----
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 881.590 ; gain = 0.000
+add_bp {C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v} 62
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 194. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 65. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 194. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 65. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 11. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Test 1: Slave 0 (Data = 10101010) -----
+Test 1 SUCCESS at time               225000, cycle 0: got 1
+Test 1 SUCCESS at time               235000, cycle 1: got 0
+Test 1 SUCCESS at time               245000, cycle 2: got 1
+Test 1 SUCCESS at time               255000, cycle 3: got 0
+Test 1 SUCCESS at time               265000, cycle 4: got 1
+Test 1 SUCCESS at time               275000, cycle 5: got 0
+Test 1 SUCCESS at time               285000, cycle 6: got 1
+Test 1 SUCCESS at time               295000, cycle 7: got 0
+----- Test 2: Slave 1 (Data = 11001100) -----
+Test 2 ERROR at time               515000, cycle 0: Expected 1, got x
+Test 2 ERROR at time               525000, cycle 1: Expected 1, got x
+Test 2 ERROR at time               535000, cycle 2: Expected 0, got x
+Test 2 ERROR at time               545000, cycle 3: Expected 0, got x
+Test 2 ERROR at time               555000, cycle 4: Expected 1, got x
+Test 2 ERROR at time               565000, cycle 5: Expected 1, got x
+Test 2 ERROR at time               575000, cycle 6: Expected 0, got x
+Test 2 ERROR at time               585000, cycle 7: Expected 0, got x
+----- Test 3: Slave 2 (Data = 11110000) -----
+Test 3 ERROR at time               805000, cycle 0: Expected 1, got x
+Test 3 ERROR at time               815000, cycle 1: Expected 1, got x
+Test 3 ERROR at time               825000, cycle 2: Expected 1, got x
+Test 3 ERROR at time               835000, cycle 3: Expected 1, got x
+Test 3 ERROR at time               845000, cycle 4: Expected 0, got x
+Test 3 ERROR at time               855000, cycle 5: Expected 0, got x
+Test 3 ERROR at time               865000, cycle 6: Expected 0, got x
+Test 3 ERROR at time               875000, cycle 7: Expected 0, got x
+----- All tests completed -----
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 881.590 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 464. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 464. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 404. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Test 1: Slave 0 (Data = 10101010) -----
+Test 1 SUCCESS at time               225000, cycle 0: got 1
+Test 1 SUCCESS at time               235000, cycle 1: got 0
+Test 1 SUCCESS at time               245000, cycle 2: got 1
+Test 1 SUCCESS at time               255000, cycle 3: got 0
+Test 1 SUCCESS at time               265000, cycle 4: got 1
+Test 1 SUCCESS at time               275000, cycle 5: got 0
+Test 1 SUCCESS at time               285000, cycle 6: got 1
+Test 1 SUCCESS at time               295000, cycle 7: got 0
+----- Test 2: Slave 1 (Data = 01010101) -----
+Test 2 ERROR at time               515000, cycle 0: Expected 0, got x
+Test 2 ERROR at time               525000, cycle 1: Expected 1, got x
+Test 2 ERROR at time               535000, cycle 2: Expected 0, got x
+Test 2 ERROR at time               545000, cycle 3: Expected 1, got x
+Test 2 ERROR at time               555000, cycle 4: Expected 0, got x
+Test 2 ERROR at time               565000, cycle 5: Expected 1, got x
+Test 2 ERROR at time               575000, cycle 6: Expected 0, got x
+Test 2 ERROR at time               585000, cycle 7: Expected 1, got x
+----- Test 3: Slave 2 (Data = 11110000) -----
+Test 3 ERROR at time               805000, cycle 0: Expected 1, got x
+Test 3 ERROR at time               815000, cycle 1: Expected 1, got x
+Test 3 ERROR at time               825000, cycle 2: Expected 1, got x
+Test 3 ERROR at time               835000, cycle 3: Expected 1, got x
+Test 3 ERROR at time               845000, cycle 4: Expected 0, got x
+Test 3 ERROR at time               855000, cycle 5: Expected 0, got x
+Test 3 ERROR at time               865000, cycle 6: Expected 0, got x
+Test 3 ERROR at time               875000, cycle 7: Expected 0, got x
+----- All tests completed -----
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 883.969 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+ERROR: [VRFC 10-1412] syntax error near endmodule [C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v:244]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 462. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 462. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Test 1: Slave 0 (Data = 10101010) -----
+Test 1 SUCCESS at time               225000, cycle 0: got 1
+Test 1 SUCCESS at time               235000, cycle 1: got 0
+Test 1 SUCCESS at time               245000, cycle 2: got 1
+Test 1 SUCCESS at time               255000, cycle 3: got 0
+Test 1 SUCCESS at time               265000, cycle 4: got 1
+Test 1 SUCCESS at time               275000, cycle 5: got 0
+Test 1 SUCCESS at time               285000, cycle 6: got 1
+Test 1 SUCCESS at time               295000, cycle 7: got 0
+----- Test 2: Slave 1 (Data = 01010101) -----
+Test 2 ERROR at time               515000, cycle 0: Expected 0, got x
+Test 2 ERROR at time               525000, cycle 1: Expected 1, got x
+Test 2 ERROR at time               535000, cycle 2: Expected 0, got x
+Test 2 ERROR at time               545000, cycle 3: Expected 1, got x
+Test 2 ERROR at time               555000, cycle 4: Expected 0, got x
+Test 2 ERROR at time               565000, cycle 5: Expected 1, got x
+Test 2 ERROR at time               575000, cycle 6: Expected 0, got x
+Test 2 ERROR at time               585000, cycle 7: Expected 1, got x
+----- Test 3: Slave 2 (Data = 11110000) -----
+Test 3 ERROR at time               805000, cycle 0: Expected 1, got x
+Test 3 ERROR at time               815000, cycle 1: Expected 1, got x
+Test 3 ERROR at time               825000, cycle 2: Expected 1, got x
+Test 3 ERROR at time               835000, cycle 3: Expected 1, got x
+Test 3 ERROR at time               845000, cycle 4: Expected 0, got x
+Test 3 ERROR at time               855000, cycle 5: Expected 0, got x
+Test 3 ERROR at time               865000, cycle 6: Expected 0, got x
+Test 3 ERROR at time               875000, cycle 7: Expected 0, got x
+----- All tests completed -----
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 904.887 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_seq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_seq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_seq_behav xil_defaultlib.tb_spi_system_led_seq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 462. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 462. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 270. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 403. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_seq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_seq_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_seq_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_seq} -tclbatch {tb_spi_system_led_seq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_seq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+----- Test 1: Slave 0 (Data = 10101010) -----
+Test 1 SUCCESS at time               225000, cycle 0: got 1
+Test 1 SUCCESS at time               235000, cycle 1: got 0
+Test 1 SUCCESS at time               245000, cycle 2: got 1
+Test 1 SUCCESS at time               255000, cycle 3: got 0
+Test 1 SUCCESS at time               265000, cycle 4: got 1
+Test 1 SUCCESS at time               275000, cycle 5: got 0
+Test 1 SUCCESS at time               285000, cycle 6: got 1
+Test 1 SUCCESS at time               295000, cycle 7: got 0
+----- Test 2: Slave 1 (Data = 01010101) -----
+Test 2 ERROR at time               515000, cycle 0: Expected 0, got x
+Test 2 ERROR at time               525000, cycle 1: Expected 1, got x
+Test 2 ERROR at time               535000, cycle 2: Expected 0, got x
+Test 2 ERROR at time               545000, cycle 3: Expected 1, got x
+Test 2 ERROR at time               555000, cycle 4: Expected 0, got x
+Test 2 ERROR at time               565000, cycle 5: Expected 1, got x
+Test 2 ERROR at time               575000, cycle 6: Expected 0, got x
+Test 2 ERROR at time               585000, cycle 7: Expected 1, got x
+----- Test 3: Slave 2 (Data = 11110000) -----
+Test 3 ERROR at time               805000, cycle 0: Expected 1, got x
+Test 3 ERROR at time               815000, cycle 1: Expected 1, got x
+Test 3 ERROR at time               825000, cycle 2: Expected 1, got x
+Test 3 ERROR at time               835000, cycle 3: Expected 1, got x
+Test 3 ERROR at time               845000, cycle 4: Expected 0, got x
+Test 3 ERROR at time               855000, cycle 5: Expected 0, got x
+Test 3 ERROR at time               865000, cycle 6: Expected 0, got x
+Test 3 ERROR at time               875000, cycle 7: Expected 0, got x
+----- All tests completed -----
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_seq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 904.887 ; gain = 0.000
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 467. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 276. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 467. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 276. Module spi_master doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 412. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               645000: led0 cycle 0, expected 1, got 0
+OK at time               655000: led0 cycle 1 = 0
+ERROR at time               665000: led0 cycle 2, expected 1, got 0
+OK at time               675000: led0 cycle 3 = 0
+ERROR at time               685000: led0 cycle 4, expected 1, got 0
+OK at time               695000: led0 cycle 5 = 0
+ERROR at time               705000: led0 cycle 6, expected 1, got 0
+OK at time               715000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+ERROR at time               725000: led1 cycle 0, expected 0, got 1
+OK at time               735000: led1 cycle 1 = 1
+ERROR at time               745000: led1 cycle 2, expected 0, got 1
+OK at time               755000: led1 cycle 3 = 1
+ERROR at time               765000: led1 cycle 4, expected 0, got 1
+OK at time               775000: led1 cycle 5 = 1
+ERROR at time               785000: led1 cycle 6, expected 0, got 1
+OK at time               795000: led1 cycle 7 = 1
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time               805000: led2 cycle 0, expected 1, got 0
+ERROR at time               815000: led2 cycle 1, expected 1, got 0
+ERROR at time               825000: led2 cycle 2, expected 1, got 0
+ERROR at time               835000: led2 cycle 3, expected 1, got 0
+OK at time               845000: led2 cycle 4 = 0
+OK at time               855000: led2 cycle 5 = 0
+OK at time               865000: led2 cycle 6 = 0
+OK at time               875000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 904.887 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master_2cycle
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               845000: led0 cycle 0, expected 1, got 0
+OK at time               855000: led0 cycle 1 = 0
+ERROR at time               865000: led0 cycle 2, expected 1, got 0
+OK at time               875000: led0 cycle 3 = 0
+ERROR at time               885000: led0 cycle 4, expected 1, got 0
+OK at time               895000: led0 cycle 5 = 0
+ERROR at time               905000: led0 cycle 6, expected 1, got 0
+OK at time               915000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+ERROR at time               925000: led1 cycle 0, expected 0, got 1
+OK at time               935000: led1 cycle 1 = 1
+ERROR at time               945000: led1 cycle 2, expected 0, got 1
+OK at time               955000: led1 cycle 3 = 1
+ERROR at time               965000: led1 cycle 4, expected 0, got 1
+OK at time               975000: led1 cycle 5 = 1
+ERROR at time               985000: led1 cycle 6, expected 0, got 1
+OK at time               995000: led1 cycle 7 = 1
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time              1005000: led2 cycle 0, expected 1, got 0
+ERROR at time              1015000: led2 cycle 1, expected 1, got 0
+ERROR at time              1025000: led2 cycle 2, expected 1, got 0
+ERROR at time              1035000: led2 cycle 3, expected 1, got 0
+OK at time              1045000: led2 cycle 4 = 0
+OK at time              1055000: led2 cycle 5 = 0
+OK at time              1065000: led2 cycle 6 = 0
+OK at time              1075000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 904.887 ; gain = 0.000
+clear
+invalid command name "clear"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master_2cycle
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               845000: led0 cycle 0, expected 1, got 0
+OK at time               855000: led0 cycle 1 = 0
+ERROR at time               865000: led0 cycle 2, expected 1, got 0
+OK at time               875000: led0 cycle 3 = 0
+ERROR at time               885000: led0 cycle 4, expected 1, got 0
+OK at time               895000: led0 cycle 5 = 0
+ERROR at time               905000: led0 cycle 6, expected 1, got 0
+OK at time               915000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+ERROR at time               925000: led1 cycle 0, expected 0, got 1
+OK at time               935000: led1 cycle 1 = 1
+ERROR at time               945000: led1 cycle 2, expected 0, got 1
+OK at time               955000: led1 cycle 3 = 1
+ERROR at time               965000: led1 cycle 4, expected 0, got 1
+OK at time               975000: led1 cycle 5 = 1
+ERROR at time               985000: led1 cycle 6, expected 0, got 1
+OK at time               995000: led1 cycle 7 = 1
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time              1005000: led2 cycle 0, expected 1, got 0
+ERROR at time              1015000: led2 cycle 1, expected 1, got 0
+ERROR at time              1025000: led2 cycle 2, expected 1, got 0
+ERROR at time              1035000: led2 cycle 3, expected 1, got 0
+OK at time              1045000: led2 cycle 4 = 0
+OK at time              1055000: led2 cycle 5 = 0
+OK at time              1065000: led2 cycle 6 = 0
+OK at time              1075000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 904.887 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master_2cycle
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               846000: led0 cycle 0, expected 1, got 0
+SHAZ at time               856000: led0 cycle 1 = 0
+ERROR at time               866000: led0 cycle 2, expected 1, got 0
+SHAZ at time               876000: led0 cycle 3 = 0
+ERROR at time               886000: led0 cycle 4, expected 1, got 0
+SHAZ at time               896000: led0 cycle 5 = 0
+ERROR at time               906000: led0 cycle 6, expected 1, got 0
+SHAZ at time               916000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+ERROR at time               925000: led1 cycle 0, expected 0, got 1
+OK at time               935000: led1 cycle 1 = 1
+ERROR at time               945000: led1 cycle 2, expected 0, got 1
+OK at time               955000: led1 cycle 3 = 1
+ERROR at time               965000: led1 cycle 4, expected 0, got 1
+OK at time               975000: led1 cycle 5 = 1
+ERROR at time               985000: led1 cycle 6, expected 0, got 1
+OK at time               995000: led1 cycle 7 = 1
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time              1005000: led2 cycle 0, expected 1, got 0
+ERROR at time              1015000: led2 cycle 1, expected 1, got 0
+ERROR at time              1025000: led2 cycle 2, expected 1, got 0
+ERROR at time              1035000: led2 cycle 3, expected 1, got 0
+OK at time              1045000: led2 cycle 4 = 0
+OK at time              1055000: led2 cycle 5 = 0
+OK at time              1065000: led2 cycle 6 = 0
+OK at time              1075000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 924.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master_2cycle
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               846000: led0 cycle 0, expected 1, got 0
+SHAZ at time               856000: led0 cycle 1 = 0
+ERROR at time               866000: led0 cycle 2, expected 1, got 0
+SHAZ at time               876000: led0 cycle 3 = 0
+ERROR at time               886000: led0 cycle 4, expected 1, got 0
+SHAZ at time               896000: led0 cycle 5 = 0
+ERROR at time               906000: led0 cycle 6, expected 1, got 0
+SHAZ at time               916000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+ERROR at time               925000: led1 cycle 0, expected 0, got 1
+OK at time               935000: led1 cycle 1 = 1
+ERROR at time               945000: led1 cycle 2, expected 0, got 1
+OK at time               955000: led1 cycle 3 = 1
+ERROR at time               965000: led1 cycle 4, expected 0, got 1
+OK at time               975000: led1 cycle 5 = 1
+ERROR at time               985000: led1 cycle 6, expected 0, got 1
+OK at time               995000: led1 cycle 7 = 1
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time              1005000: led2 cycle 0, expected 1, got 0
+ERROR at time              1015000: led2 cycle 1, expected 1, got 0
+ERROR at time              1025000: led2 cycle 2, expected 1, got 0
+ERROR at time              1035000: led2 cycle 3, expected 1, got 0
+OK at time              1045000: led2 cycle 4 = 0
+OK at time              1055000: led2 cycle 5 = 0
+OK at time              1065000: led2 cycle 6 = 0
+OK at time              1075000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 924.703 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/tb_spi_system_led_seq_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_spi_system_led_single_reset' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_spi_system_led_single_reset_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_2cycle
+INFO: [VRFC 10-311] analyzing module spi_slave_led
+INFO: [VRFC 10-311] analyzing module spi_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sim_1/new/spi_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_system_led_single_reset
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 7a8e83f47fe24558a70c78115bfb86b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spi_system_led_single_reset_behav xil_defaultlib.tb_spi_system_led_single_reset xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 491. Module spi_system doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 299. Module spi_master_2cycle doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.srcs/sources_1/new/spi.v" Line 439. Module spi_slave_led doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spi_master_2cycle
+Compiling module xil_defaultlib.spi_slave_led
+Compiling module xil_defaultlib.spi_system
+Compiling module xil_defaultlib.tb_spi_system_led_single_reset
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spi_system_led_single_reset_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/himan/OneDrive/Desktop/finaYRpro/trafficLight - Copy/trafficLight.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_spi_system_led_single_reset_behav -key {Behavioral:sim_1:Functional:tb_spi_system_led_single_reset} -tclbatch {tb_spi_system_led_single_reset.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source tb_spi_system_led_single_reset.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100000ns
+
+Checking Slave0 LED (should show 10101010)...
+ERROR at time               846000: led0 cycle 0, expected 1, got 0
+SHAZ at time               856000: led0 cycle 1 = 0
+ERROR at time               866000: led0 cycle 2, expected 1, got 0
+SHAZ at time               876000: led0 cycle 3 = 0
+ERROR at time               886000: led0 cycle 4, expected 1, got 0
+SHAZ at time               896000: led0 cycle 5 = 0
+ERROR at time               906000: led0 cycle 6, expected 1, got 0
+SHAZ at time               916000: led0 cycle 7 = 0
+
+Checking Slave1 LED (should show 01010101)...
+OK at time               925000: led1 cycle 0 = 0
+ERROR at time               935000: led1 cycle 1, expected 1, got 0
+OK at time               945000: led1 cycle 2 = 0
+ERROR at time               955000: led1 cycle 3, expected 1, got 0
+OK at time               965000: led1 cycle 4 = 0
+ERROR at time               975000: led1 cycle 5, expected 1, got 0
+OK at time               985000: led1 cycle 6 = 0
+ERROR at time               995000: led1 cycle 7, expected 1, got 0
+
+Checking Slave2 LED (should show 11110000)...
+ERROR at time              1005000: led2 cycle 0, expected 1, got 0
+ERROR at time              1015000: led2 cycle 1, expected 1, got 0
+ERROR at time              1025000: led2 cycle 2, expected 1, got 0
+ERROR at time              1035000: led2 cycle 3, expected 1, got 0
+OK at time              1045000: led2 cycle 4 = 0
+OK at time              1055000: led2 cycle 5 = 0
+OK at time              1065000: led2 cycle 6 = 0
+OK at time              1075000: led2 cycle 7 = 0
+
+All checks complete.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_spi_system_led_single_reset_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 924.703 ; gain = 0.000
+remove_forces { {/tb_spi_system_led_single_reset/i} }
+remove_forces { {/tb_spi_system_led_single_reset/i} }
+remove_forces { {/tb_spi_system_led_single_reset/expected_led} }
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 01:15:17 2025...
